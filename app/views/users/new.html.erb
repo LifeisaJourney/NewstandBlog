@@ -2,13 +2,11 @@
   <div class="container">
     
     <%= form_for @user do |f| %>
-    <p><%= f.text_field :first_name, :placeholder => "First Name"%></p><br>
-    <p><%= f.text_field :last_name, :placeholder => "Last Name"%></p> <br>
-    <p><%= f.email_field :email, :placeholder => "Email"%></p> <br>
-    <p><%= f.password_field :password, :placeholder => "Password" %><br>
-    </p>
-    <br>      
-    <p><%= f.submit "Log in", class: 'btn-submit' %></p>
+      <p><%= f.text_field :first_name, :placeholder => "First Name"%></p><br>
+      <p><%= f.text_field :last_name, :placeholder => "Last Name"%></p> <br>
+      <p><%= f.email_field :email, :placeholder => "Email"%></p><br>
+      <p><%= f.password_field :password, :placeholder => "Password" %></p><br>      
+      <p><%= f.submit "Sign Up", class: 'btn-submit' %></p>
     <% end %>
   </div>
 </div>
